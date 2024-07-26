@@ -8,18 +8,25 @@
     color: white;
 }
 
-@import url('https://fonts.cdnfonts.com/css/miama');
-.inter_miama{
-    font-family:"Miama", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 body{        
     padding: 0;
     margin: 0;
     background: black;
+    
  }
-header{
-    border: 1px solid rgb(233, 47, 47);       
+.section{
+    max-width: 100%;
+    
+    border: 1px solid rgb(12, 12, 12);
     background: linear-gradient(
         to bottom,
         rgb(17, 17, 17),         
@@ -28,27 +35,45 @@ header{
     }
 
     /* ---------shared style-------- */
+.m{
+    margin-right: 190px;
+    margin-left: 190px;   
+}
 .brand_name{
     font-weight: 800;
-    font-size: 2.25rem;
+    font-size: 3rem;
     color: #E6533C;
     font-style: italic;
 }
 .display_flex{
     display: flex;
 }
+.navbar_x{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+.btn_primary{
+    font-size: 1.2rem;
+    font-weight: 550;
+    max-width: 224px;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 42px;
+    background-color: #E6533C;
+
+
+}
 
 /* -----------navbar----------- */
 .navbar{
+    margin-top: 30px;
     display: flex;
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     align-items: center;
     justify-content: space-between;
 }
-.navbar {
-    max-width: 1440px;
-    margin: 0 auto;
-}
+
 
 
 /* --------brand links----------- */
@@ -79,15 +104,73 @@ header{
     border-radius: 46px;
 }
 /* ---------brand title----------- */
-.brand_title{
+.brandtitle_center{
+    align-items: center;
+    justify-content: space-between;
     
+    
+    /* border: 1px solid sandybrown;  */
+}
+.brand_title_border{
+
+    max-width: 600px;
+
+    padding-right: px;
+    /* border: 1px solid gold; */
+    
+}
+
+
+.brand_title{
+
     font-size: 4.87rem;
     font-weight: 900;
     font-family: "Inter";
 
 }
+.title{
+    word-spacing: 10px;
+
+}
 .brand_sub{
-    font-size: 4.87rem;
-    font-style: italic;
+    font-weight: 900;
+    font-size: 5rem;
+    /* font-style: italic; */
     font-family:"Miama", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#button{
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 224px;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 42px;
+    background-color: transparent;
+    border: 1px solid white;
+   
+
+}
+
+/* -------tranparant card-------------------------------problem---------------------------------------------------- */
+.card { 
+   
+    margin-left: 300px;
+    margin-bottom: -250px;
+    width: 206px; 
+    height: 96px; 
+    border-radius: 12px; 
+    background-color: rgb(114, 114, 19);
+    backdrop-filter: blur(5px);
+    
+    padding: 10px; 
+    border: 1px solid white;
+    /* filter: blur(20px); */
+    
+} 
+
+
+.img_border{
+    margin-bottom: -5px;
+    /* border: 1px solid red; */
 }
